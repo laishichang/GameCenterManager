@@ -268,7 +268,8 @@
             if (![[GKLocalPlayer localPlayer] isAuthenticated]) {
                 if ([self previousGameCenterAvailability] != GameCenterAvailabilityPlayerNotAuthenticated) {
                     [self setPreviousGameCenterAvailability:GameCenterAvailabilityPlayerNotAuthenticated];
-                    NSDictionary *errorDictionary = @{@"message": @"Player is not signed into GameCenter, has declined to sign into GameCenter, or GameKit had an issue validating this game / app.", @"title": @"Player not Authenticated"};
+                    NSDictionary *errorDictionary = @{@"message": @"Player is not signed into GameCenter, has declined to sign into GameCenter, or GameKit had an issue validating this game / app.",
+                                                      @"title": @"Player not Authenticated"};
                 
                     if ([[self delegate] respondsToSelector:@selector(gameCenterManager:availabilityChanged:)])
                         [[self delegate] gameCenterManager:self availabilityChanged:errorDictionary];

@@ -242,7 +242,7 @@ The GKScore object, `score` contains information about the submitted score.
 
     - (void)gameCenterManager:(GameCenterManager *)manager didSaveScore:(GKScore *)score
 
-###Reported Achievement
+###Reported Achievement 
 Called after the submitted achievement and its percent complete is successfully saved, uploaded, and posted to Game Center. 
 
 The GKAchievement object, `achievement`, is the final achievement that was saved. The error object may contain an error if one occured, or it may be nil.
